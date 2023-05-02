@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --yellow: #F9C74E;
+  --green: #C0D594;
+  --blue: #66DAF5;
+  --orange: #F5A543;
+  --font-title: 36px/40px 'Lato', Arial, sans-serif;
+  --font-sub-title: 30px 'Lato', Arial, sans-serif;
+  --font-regular: 18px/20px 'Lato', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: transparent linear-gradient(180deg, #FACC4A 0%, #FAC44A 73%, #FABD4A 87%, #FAB64A 100%) 0% 0% no-repeat padding-box;
+  font: var(--font-regular);
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+h1 {
+  font: var(--font-title);
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+  font: var(--font-sub-title);
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.error {
+  color: rgb(151, 26, 26);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.b-btn {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+  margin: 2rem auto;
+  padding: 10px;
+}
+.g-btn {
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+/***** Navagation Bar *****/
+
+.navbar {
+  background: #FFFFFF;
+  opacity: 1;
+  padding: 20px 40px;
+}
+
+/* Brand */
+
+#brand {
+  align-items: center;
+  display: flex;
+}
+
+#brand h1 {
+  color: #000000;
+  font: normal normal 900 36px/44px Lato;
+  font-size: calc(1.375rem + 1.5vw);
+  height: 44px;
+  left: 169px;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-align: left;
+  top: 40px;
+  width: auto;
+}
+
+#banner {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  left: 24px;
+  top: 36px;
+}
+
+#logo {
+  height: auto;
+  margin-right: 16px;
+  opacity: 1;
+  width: 100%;
+}
+
+/* Menu */
+
+.nav-menu {
+ justify-content: flex-end;
+}
+
+.nav-list{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--black);
+  padding: 5px;
+}
+
+.nav-link:hover {
+  text-decoration: underline solid 6px #FBCE54;
+}
+
+/** Footer **/
+
+#footer{
+ width: 100%;
+}
+
+/***** Home Page *****/
+
+#welcome-banner {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  margin: 3rem;
+  justify-content: space-evenly;
+}
+
+#sunflower-img {
+  border-radius: 15px;
+}
+
+#welcome-par {
+  color: var(--black);
+  display: block;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+  width: 60%;
+}
+
+#welcome-par h1{
+  margin: 0;
+}
+
+#welcome-par h3{
+  margin-top: 10px;
+  padding: 0 1rem;
+}
+
+#welcome-par p {
+  padding-bottom: 1rem;
+}
+
+/* #welcome-par a {
+  background-color: var(--blue);
+  border-radius: 20px;
+  color: var(--black);
+  padding: 12px;
+  text-decoration: none;
+} */
+
+/***** Login Page *****/
+
+#login-error {
+  color: #f00;
+}
+
+#login{
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#login-btn {
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.2);
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+/** User Account **/
+
+#account-btn {
+  
+}
+
+/**************** MEDIA SCREEN 853PX ******************/
+
+@media  screen and (max-width:991px) {
+
+
+}
+
+
+/**************** MEDIA SCREEN 778PX ******************/
+
+@media  screen and (max-width:778px) {
+
+  /** Header **/
+  #banner {
+    text-align: center;
+  }
+
+  div #brand {
+    display: block;
+  }
+
+  #logo {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+  }
+
+  #brand h1{
+    font-size: 28;
+    margin: auto;
+  }
+
+  /** Home **/
+
+  #welcome-banner {
+    align-items: center;
+    display: inline-block;
+    justify-content: space-evenly;
+  }
+  #sunflower-img {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  #welcome-par {
+    color: var(--black);
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+/**************** MEDIA SCREEN 425PX ******************/
+
+@media  screen and (max-width:425px) {
+  #navbar-cont {
+    justify-content: center;
+  }
+
+  /** Login **/
+
+}
